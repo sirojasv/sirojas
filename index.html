@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Encuestas Web/Web Surveys</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sebastián Rojas Vergara" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="my_logo.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: right, top, my-title, title-slide
+
+# Encuestas Web/Web Surveys
+## Metodología de Investigación a través de encuestas
+### Sebastián Rojas Vergara
+### .top[<img src="logo_puc2.png" alt="description of the image" />]
+### Miércoles 31 de marzo, 2021
+
+---
+
+
+
+
+
+
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+# Contenidos
+
+1. Introducción.
+2. Tipos de encuestas web.
+3. Enfoque del Error Total de Encuesta.
+4. Errores de no-observación y diseño muestral.
+5. Errores de observación y diseño de encuestas.
+6. Plataformas de encuestas web.
+
+---
+class: center, middle, inverse
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+# 1. Introducción
+---
+
+# Inicio de las encuestas web
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Avances en los modos de recolección de datos durante los años 80 y 90 posibilitaron el levantamiento de encuestas telefónicas&lt;sup&gt;1&lt;/sup&gt; y cara a cara &lt;sup&gt;2&lt;/sup&gt; asistidas por computadora. Sirvieron como base para las encuestas web.
+
+- Las encuestas web tienen como antecedentes las encuestas por correo postal. En estas, se enviaba un cuestionario en papel al entrevistado para que posteriormente lo devolviera con sus respuestas. 
+
+- Son el medio más económico para levantar información mediante encuestas. El coste marginal de cada caso es extremadamente pequeño. 
+
+.footnote[
+[1] Computer Assisted Telephone Interview.
+
+[2] Computer Assisted Personal Inverview.
+]
+
+---
+class: center, middle, inverse
+
+# 2. Tipos de encuestas web
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+---
+
+# Tipos de encuestas web I
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Couper (2000)&lt;sup&gt;3&lt;/sup&gt; distingue ocho tipos de encuestas web, diferenciadas según uso del muestreo probabilístico.
+
+- Las **muestras probabilísticas** se definen como aquellas donde cada elemento de la población de interés tiene una probabilidad de inclusión distinta de cero, la cual es conocida. Las probabilidades no tienen qué ser necesariamente las mismas para cada elemento.
+
+- ¿Qué sesgos pueden introducir el uso de muestras no probabilísticas?
+
+
+.footnote[
+[3] Couper, M. P. (2000). Web surveys: A review of issues and approaches. Public Opinion Quarterly, 64, 464–494. 
+]
+---
+# Tipos de encuestas web II
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+&lt;div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; border-bottom: 0;"&gt;
+&lt;table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; font-size: 20px; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"&gt; Tipo &lt;/th&gt;
+   &lt;th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"&gt; Características &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr grouplength="3"&gt;&lt;td colspan="2" style="background-color: #F0FFF0; color: #000000"&gt;&lt;strong&gt;Muestras no probabilísticas&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 1. Encuestas de entretenimiento &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Encuestas que no hacen afirmaciones sobre la representatividad. Por ejemplo, votaciones rápidas en un programa de TV. Los encuestados suelen ser voluntarios en el sitio web que alberga la encuesta. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 2. Encuestas de autoselección sin restricciones &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Encuestados son reclutados mediante invitaciones abiertas o frecuentemente visitando sitios web. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 3. Paneles de inclusión voluntaria &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Encuestados participan en varias encuestas como miembros de un panel web; miembros son usualmente reclutados vía invitaciones o sitios web. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="5"&gt;&lt;td colspan="2" style="background-color: #F0FFF0; color:#000000"&gt;&lt;strong&gt;Muestras probabilísticas&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 4. Encuestas de intercepción &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Los participantes de la muestra son seleccionados aleatoria o sistemáticamente visitando un sitio web específico, típicamente vía invitaciones pop-up. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 5. Encuestas basadas en listas &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Participantes de la muestra son seleccionados de una lista de población bien definida (p.e. estudiantes o funcionarios de una universidad), que son reclutados vía correo electrónico. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 6. Opción web en encuestas de modos mixtos &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Una alternativa web es ofrecida a los miembros de la muestra seleccionados por métodos tradicionales. El contacto inicial suele hacerse por otro medio con una carta de presentación. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 7. Panel de usuarios de internet previamente reclutados &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Una muestra probabilística, seleccionada y diseñada para identificar usuarios de internet, es reclutada para participar en un panel. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 20em; font-weight: bold;padding-left: 2em;" indentlevel="1"&gt; 8. Panel de población general previamente reclutada &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Se recluta una muestra probabilística para formar parte de un panel web. Se provee de acceso a internet a aquellos que no tienen. &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;&lt;span style="font-style: italic;"&gt;Note: &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;
+&lt;sup&gt;&lt;/sup&gt; Traducción propia a partir de Couper (2000).&lt;/td&gt;&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/div&gt;
+---
+# Ejemplos de paneles web I
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- El Gallup panel es una encuesta de usuarios de internet previamente reclutados. Para construir su marco muestral utiliza el discado aleatorio de números telefónicos. Aplica la encuesta vía web a las personas que cuentan con internet, a la vez que utiliza encuestas por correo para la muestra seleccionada que no tiene acceso.
+
+&lt;img src="Gallup.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+#  Ejemplos de paneles web II
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Panel de Países Bajos del *Longitudinal Internet Studies for the Social Sciences (LISS)*. Consiste en una muestra de 5.000 hogares basado en una muestra probabilística tomada de los registros de población de las estadísticas oficiales del país.
+
+- Los participantes del panel completan mensualmente un cuestionario de entre 15 a 30 minutos por el cual reciben un pago. 
+
+&lt;img src="LISS.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+class: center, middle, inverse
+
+# 3. Enfoque del Error Total de Encuesta
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+---
+
+# Error Total de Encuesta
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+Para analizar las bondades y las desventajas de las encuestas web, utilizaremos el modelo del "Error Total de Encuesta" de Groves (1989)&lt;sup&gt;4&lt;/sup&gt;. En este marco conceptual los errores de la encuesta son divididos en dos categorías principales:
+
+1. **Errores que afectan cuán bien la muestra representa a la población de interés**. Este tipo de errores surgen de lo que **no es observado** en la encuesta. Refieren al diseño de la muestra.
+
+2. **Errores que afectan la validez y precisión de las respuestas de una encuesta**. Estos errores surgen de lo que es **observado** en la encuesta. Refieren a la diferencia entre el valor "verdadero" para el encuestado y lo que efectivamente declara en la encuesta. Refieren al diseño del cuestionario.
+
+.footnote[
+[4] Groves, R. M. (1989). Survey costs and survey errors. New York: John Wiley.
+]
+
+---
+class: center, middle, inverse
+
+# 4. Errores de no-observación y diseño muestral
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+---
+
+# Errores de no observación
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+
+En los errores relacionados a la construcción de la muestra, se deben destacar tres elementos:
+
+1. **Errores de muestreo**: error ocasionado por trabajar con muestras, es decir, encuestar a un subconjunto de la población objetivo. Implica la capacidad de calcular las probabilidades de selección de las unidades del marco muestral. Es un indicador de precisión de las estimaciones conectado con el diseño muestral y el tamaño de la muestra.
+
+2. **Error de cobertura**: error asociado a la exclusión proceso de selección muestral a determinados elementos de la población objetivo del estudio.
+
+3. **Errores de no respuesta**: error provocado por las diferencias existentes entre la muestra que contestó la encuesta y la que no, para variables relevantes de la encuesta.
+
+---
+
+# Errores de muestreo
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Las encuestas no probabilísticas no pueden calcular errores muestrales. Como no cuentan con un marco muestral, la probabilidad de selección de las unidades es desconocida.
+
+- Las encuestas web no cuentan con un método "nativo" de construcción de marcos muestrales. Esto se debe a que no se cumplen con las claves para su construcción: (i) buena cobertura de la población objetivo, (ii) bajas tasas de duplicidad de la información, (iii) información de contacto actualizada.
+
+- En el caso de poblaciones específicas con las que se cuenta con información previa, se pueden dar las condiciones necesarias para construir un buen marco muestral. Por ejemplo, estudiantes de educación superior, trabajadores de grandes empresas, etc. 
+
+- Las modalidades mixtas, los paneles de usuarios de internet reclutados previamente y los paneles de población general reclutada previamente utilizan marcos muestrales de las modalidades presenciales y/o telefónicas.
+
+---
+# Errores de cobertura
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Uno de los mayores problemas de las encuestas web refiere a las diferencias entre la población que tiene acceso a internet y la que no.
+
+- División digital por edad, educación, nivel socioeconómico y etnia.  Por ejemplo, en Estados Unidos, la población que usa internet es más joven, mejor educada, de mayores ingresos y blancos (Tourangeau et al., 2013)
+
+- Además de las diferencias de acceso a internet, existen disparidades en la experiencia de uso. 
+
+---
+# Cobertura de Internet en Chile
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Según los reportes de la [Subsecretaría de Telecomunicaciones](https://www.subtel.gob.cl/conexiones-de-internet-fija-crecen-55-en-chile-a-junio-de-2020/#:~:text=SANTIAGO%2C%2005%20DE%20OCTUBRE%20DE,millones%20a%20junio%20de%202020.), el número de conexiones de internet fija y móvil sigue aumentando.
+
+&lt;img src="subteljun2020.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+# Diferencias en el uso de internet I
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+&lt;img src="mide2020.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+# Diferencias en el uso de internet II
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+&lt;img src="ceel2020.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+# Error de no respuesta y tasa de participación I
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+El error de no respuesta es el sesgo que resulta de las diferencias entre la muestra inicial y la que efectivamente respondió la encuesta. ¿Qué estrategias se pueden implementar para aumentar la participación en las encuestas?
+
+- **Prenotificación**: la evidencia sugiere que las notificaciones previas enviadas por medios distintos al correo electrónico (p.e. cartas) aumentan las tasas de participación.
+
+- **Invitaciones**: no existe evidencia concluyente sobre invitaciones genéricas o personalizadas. Dependerá del tipo de estudio y el juicio del equipo de investigación.
+
+- **Tema y patrocinador**: dependiendo de la temática del estudio, puede resultar beneficioso dar más detalles sobre la temática y patrocinador de la investigación. Sin embargo, esto puede introducir sesgo de autoselección. 
+
+---
+#  Error de no respuesta y tasa de participación II
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- **Número de intentos de contacto**: encuestas que realizan tres o más intentos tienen mejores tasas de respuesta. No obstante, se debe tener procurar que la insistencia no genere rechazo entre los participantes.
+
+- **Incentivos**: los incentivos previos son más beneficiosos que los condicionales. Además, los incentivos en dinero efectivo son más atractivos que otras alternativas (p.e. sorteos). A pesar de ello, los incentivos condicionales y no monetarios suelen ser más utilizados. 
+
+---
+# Error de no respuesta y tasa de participación III
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- **Tiempo de entrevista**: la duración informada y la real del cuestionario pueden tener efectos sobre la participación. En un estudio de Crawford et al., (2001)&lt;sup&gt;5&lt;/sup&gt;, a quienes se les indicó que la entrevista duraría entre 8 a 10 minutos fueron más propensos a contestar la encuesta que a quienes se les dijo que duraría 20 minutos, pero también abandonaron la encuesta en mayor proporción. 
+
+Galešic (2006)&lt;sup&gt;6&lt;/sup&gt; encontró que tomando como referencia una encuesta de 10 minutos, el riesgo de abandono era 20% mayor para los que realizaron una encuesta de 20 minutos y 40% más alto para encuestas de 30 minutos.
+
+.footnote[
+[5] Crawford, S., Couper, M. P., &amp; Lamias, M. (2001). Web surveys: Perception of burden. Social Science Computer Review, 19, 146–162.
+
+[6] Galešic, M. (2006). Dropouts on the Web: Effects of interest and burden experienced during an online survey. Journal of Official Statistics, 22, 313–328.
+]
+
+---
+class: center, middle, inverse
+
+# 5. Errores de observación y diseño de encuestas
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+---
+
+# Características de medición en encuestas web
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+¿Cómo la construcción del cuestionario facilita u obstaculiza la medición de los conceptos relevantes de la encuesta. Se debe tener especial atención con la **carga cognitiva**.
+
+1. **Riqueza de medios audiovisuales** que podrían mejorar la validez y confiabilidad de las preguntas.
+2. Su **carácter computacional**, que facilita la *aleatorización* (preguntas, alternativas, formatos) y *validaciones* (p.e. preguntas condicionales, saltos, rangos, textos abiertos, información previa del cuestionario).
+3. **Grados de interactividad**. Se pueden programar rutinas para que se asemejen a las encuestas administradas por encuestadores.
+4. **Distribución en los equipos de los encuestados**, lo que reduce el grado de control sobre la presentación de las preguntas.
+5. **Carácter autoadministrado**. Beneficioso cuando la participación de un encuestador puede generar sesgos de deseabilidad social, pero perjudicial porque se pierden los factores positivos de su presencia. 
+
+
+---
+
+# Diseño de encuestas web I
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+¿Qué decisiones deben tomarse en el diseño de encuestas web?
+
+- **Paginación y scrolling**: se puede optar por agrupar un conjunto de preguntas por cada página o realizar desplazamiento vertical. Se recomienda lo primero para cuestionarios extensos o complejos y lo segundo para aquellos reducidos.
+
+- **Fuente y tipo de letra**: importancia del tamaño de la fuente y cómo esta reacciona a los énfasis selectivos.
+
+- **Colores**: no hay mucha evidencia, pero se suelen preferir los fondos claros. 
+
+---
+
+# Diseño de encuestas web II
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- **Énfasis selectivo**: negrita y cursiva deben seguir un estilo consistente; no se recomiendan las mayúsculas para textos largos; evitar los subrayados y los textos de color azul.  
+
+- **Botones "atrás" y "siguiente"**: se recomienda incluir ambos botones, pero el de "atrás" debe ser menos visible dada su frecuencia de uso. 
+
+- **Formatos visuales de preguntas**: los botones de radio suelen usarse para selecciones únicas, mientras que los check boxes para selecciones múltiples. 
+
+- **Preguntas de grilla o matriz**: disminuyen los tiempos de respuesta y permiten agrupar preguntas que comparten elementos en común. Se recomienda simplificar las cuadrículas e introducir ayudas visuales.
+
+
+---
+# Interpretación de elementos visuales
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+Los encuestados pueden usar la información visual de las encuestas para obtener ayuda en la comprensión del significado de las preguntas&lt;sup&gt;7&lt;/sup&gt;.
+
+1. La posición central representa el punto neutral o la respuesta promedio.
+2. Expectativa de que las respuestas sigan un órden lógico, progresando de izquierda a derecha y de arriba hacia abajo.
+3. Tendencia a inferir una relación conceptual entre dos items basados en su proximidad posicional.
+4. Tendencia a inferir similitud conceptual entre dos items con apariencia similar. 
+5. Expectativa de que los elementos positivos aparezcan en la posición superior de la pantalla.
+
+.footnote[
+[7] Tourangeau, R., Conrad, F. G., &amp; Couper, M. (2013). The Science of Web Surveys (1 edition). Oxford University Press.
+]
+
+---
+class: center, middle, inverse
+
+# 6. Plataformas de encuestas web
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+---
+
+# Plataformas de encuestas web
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+- Existe una multitud de herramientas para la creación de encuestas web. Por ejemplo: Google Forms, SurveyMonkey, QuestionPro, Qualtrics, LimeSurvey, Encuesta Fácil, etc.
+
+- En general, cuentan con interfaces gráficas de usuario (GUI) para las funciones básicas e intermedias. No obstante, para validaciones más complejas se suele requerir conocimientos básicos sobre programación.
+
+- La mayoría de estas herramientas tienen opciones gratuitas (con diferencias importantes en las funcionalidades habilitadas) y versiones de pago. Se debe tener en cuenta el número de preguntas y el número de respuestas, los tipos de preguntas de las que disponen, entre otras funciones relevantes.
+
+- Algunas herramientas que ofrecen más de un método de levantamiento. Por ejemplo, [Survey Solutions](https://mysurvey.solutions/en/) del Banco Mundial; o aquellas enlazadas a Sistemas de Información Geográfica, como Survey 123 de ArcGIS. 
+
+---
+
+class: center, middle
+
+# ¡Gracias!
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+Estas diapositivas fueron creadas utilizando el paquete [**xaringan**](https://github.com/yihui/xaringan) del software R.
+
+Basado en [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"seal": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
